@@ -1,5 +1,18 @@
 {
-  "rewrites": [
-    { "source": "/calendar", "destination": "/api/calendar" }
+  "functions": {
+    "app.py": {
+      "runtime": "python3.12",
+      "maxDuration": 30
+    }
+  },
+  "routes": [
+    {
+      "src": "/calendar.ics",
+      "dest": "/api/calendar"
+    },
+    {
+      "src": "/",
+      "dest": "/api/calendar"
+    }
   ]
 }
