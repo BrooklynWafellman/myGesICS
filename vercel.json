@@ -1,10 +1,4 @@
 {
-  "functions": {
-    "app.py": {
-      "runtime": "python3.12",
-      "maxDuration": 30
-    }
-  },
   "routes": [
     {
       "src": "/calendar.ics",
